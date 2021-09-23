@@ -258,7 +258,7 @@ unclassified:
   gitHubConfiguration:
     apiRateLimitChecker: ThrottleForNormalize
   gitHubPluginConfig:
-    hookUrl: "http://ace8ae58e21ce46df864f3e59c5925af-1740655093.us-east-1.elb.amazonaws.com/controller1/github-webhook/"
+    hookUrl: "http://ace8ae58e21ce46df864f3e59c5925af-1740655093.us-east-1.elb.amazonaws.com/controller1a/github-webhook/"
   gitSCM:
     addGitTagAction: false
     allowSecondFetch: false
@@ -278,7 +278,6 @@ unclassified:
           scm:
             github:
               configuredByUrl: true
-              id: "002e0388-5691-4f79-9325-400be724402e"
               repoOwner: "darinpope"
               repository: "github-api-global-lib"
               repositoryUrl: "https://github.com/darinpope/github-api-global-lib.git"
@@ -294,15 +293,11 @@ unclassified:
     storage: "file"
   location:
     adminAddress: "smtpnotifypipeline@gmail.com"
-    url: "http://ace8ae58e21ce46df864f3e59c5925af-1740655093.us-east-1.elb.amazonaws.com/controller1/"
+    url: "http://ace8ae58e21ce46df864f3e59c5925af-1740655093.us-east-1.elb.amazonaws.com/controller1a/"
   mailer:
     charset: "UTF-8"
     useSsl: false
     useTls: false
-  operationsCenterRootAction:
-    connectionDetails: "----- BEGIN CONNECTION DETAILS -----\nH4sIAAAAAAAAAB3OSw7CMAxF0b1kTD7QRC2dsgRWkDguP6uunAQGiL0TmB7dJ723ukhcq5pVGNEN\r\
-      \n47RonwbQHo5exwNOOvgAzoUELke1U7fcW6dPvFZhIpR9xybU9VrrNlsLdwYDxC0nxKKBBU15/qiV\r\
-      \nimKIIdK/sn36wnRmeGC/sEQq+PkCJrws/JIAAAA=\r\n----- END CONNECTION DETAILS -----\n"
   pollSCM:
     pollingThreadCount: 10
   usageStatisticsCloudBees:
