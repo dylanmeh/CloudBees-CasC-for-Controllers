@@ -1,0 +1,38 @@
+removeStrategy:
+  rbac: SYNC
+  items: NONE
+items:
+- concurrentBuild: true
+  kind: pipeline
+  displayName: email_pipeline
+  resumeBlocked: false
+  name: email_pipeline
+  description: ''
+  definition:
+    cpsFlowDefinition:
+      sandbox: true
+      script: "pipeline {\n    agent any\n    stages {\n        stage ('Email notification')\
+        \ {\n            steps {\n            emailext body: 'Build Successful', subject:\
+        \ 'Echo', to: 'smtpnotifypipeline@gmail.com'\n        \n            }    \n\
+        \        }\n    }\n}"
+  disabled: false
+- concurrentBuild: true
+  kind: pipeline
+  displayName: email_pipeline2
+  resumeBlocked: false
+  name: email_pipeline2
+  description: ''
+  definition:
+    cpsFlowDefinition:
+      sandbox: true
+      script: "pipeline {\n    agent any\n    stages {\n        stage ('Email notification')\
+        \ {\n            steps {\n            emailext body: 'Build Successful', subject:\
+        \ 'Echo', to: 'smtpnotifypipeline@gmail.com'\n        \n            }    \n\
+        \        }\n    }\n}"
+  disabled: false
+- concurrentBuild: true
+  kind: pipeline
+  displayName: pipeline-job2
+  resumeBlocked: false
+  name: pipeline-job2
+  disabled: false
