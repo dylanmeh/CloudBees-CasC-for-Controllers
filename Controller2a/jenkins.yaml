@@ -217,7 +217,6 @@ unclassified:
     - "hudson.plugins.emailext.plugins.trigger.FailureTrigger"
     mailAccount:
       smtpHost: "smtp.gmail.com"
-      smtpPassword: "{AQAAABAAAAAQg3st8ci0zJcN2+QuW/5Nd8koUS5GgxlmXve6BSuAF1s=}"
       smtpPort: "465"
       smtpUsername: "smtpnotifypipeline@gmail.com"
       useSsl: true
@@ -234,7 +233,7 @@ unclassified:
   gitHubConfiguration:
     apiRateLimitChecker: ThrottleForNormalize
   gitHubPluginConfig:
-    hookUrl: "http://ace8ae58e21ce46df864f3e59c5925af-1740655093.us-east-1.elb.amazonaws.com/controller2/github-webhook/"
+    hookUrl: "http://ace8ae58e21ce46df864f3e59c5925af-1740655093.us-east-1.elb.amazonaws.com/controller2a/github-webhook/"
   gitSCM:
     addGitTagAction: false
     allowSecondFetch: false
@@ -249,15 +248,11 @@ unclassified:
     storage: "file"
   location:
     adminAddress: "address not configured yet <nobody@nowhere>"
-    url: "http://ace8ae58e21ce46df864f3e59c5925af-1740655093.us-east-1.elb.amazonaws.com/controller2/"
+    url: "http://ace8ae58e21ce46df864f3e59c5925af-1740655093.us-east-1.elb.amazonaws.com/controller2a/"
   mailer:
     charset: "UTF-8"
     useSsl: false
     useTls: false
-  operationsCenterRootAction:
-    connectionDetails: "----- BEGIN CONNECTION DETAILS -----\nH4sIAAAAAAAAAB3OSw7CMAxF0b1kjNOWNlXUKUvoClLH4WfVyElggNg7genRfdJ7m7OGvZjF9GMc\r\
-      \nUhgdOPIzTDEhePQJKHqHfupnR8EczDW2doCT7EWFmfTYsCo3vZTyWLoOb4IWWWrciDKgKNn8/FHN\r\
-      \nhdSyYOB/1bXpi7ZV8E7tQgqc6fMFFUZ95ZIAAAA=\r\n----- END CONNECTION DETAILS -----\n"
   pollSCM:
     pollingThreadCount: 10
   usageStatisticsCloudBees:
